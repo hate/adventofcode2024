@@ -41,7 +41,7 @@ pub fn run() {
                 .iter()
                 .enumerate()
                 .filter(|(i, _)| *i != skip_idx)
-                .map(|(_, &v)| v)
+                .map(|(_, v)| *v)
                 .collect();
 
             if is_sequence_safe(&filtered) {
