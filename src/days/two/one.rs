@@ -26,10 +26,10 @@ pub fn run() {
     let mut safe_reports = 0;
 
     for line in input.lines() {
-        let values: Vec<usize> = line
+        let values = line
             .split_whitespace()
             .filter_map(|s| s.parse().ok())
-            .collect();
+            .collect::<Vec<usize>>();
 
         if is_sequence_safe(&values) {
             safe_reports += 1;
