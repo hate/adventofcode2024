@@ -1,4 +1,3 @@
-
 use crate::helpers::get_input::*;
 
 pub fn run() {
