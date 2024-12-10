@@ -62,7 +62,25 @@ fn main() {
                     five::two::run();
                 }
             }
+            
+            "6" => {
+                if args[2].as_str() == "1" {
+                    six::one::run();
+                } else {
+                    six::two::run();
+                }
+            }
+            
+            "7" => {
+                if args[2].as_str() == "1" {
+                    seven::one::run();
+                } else {
+                    seven::two::run();
+                }
+            }
             _ => println!("re read the README.md perhaps?"),
+            
+            
             
             
             
