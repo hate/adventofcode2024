@@ -54,7 +54,16 @@ fn main() {
                     four::two::run();
                 }
             }
+            
+            "5" => {
+                if args[2].as_str() == "1" {
+                    five::one::run();
+                } else {
+                    five::two::run();
+                }
+            }
             _ => println!("re read the README.md perhaps?"),
+            
             
             
             
