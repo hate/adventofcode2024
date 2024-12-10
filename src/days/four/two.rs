@@ -48,11 +48,10 @@ pub fn run() {
         .collect::<Vec<_>>();
 
     let mut count = 0;
-    let height = grid.len();
-    let width = grid[0].len();
+    let length = grid.len();
 
-    for row in 0..height {
-        for col in 0..width {
+    for row in 0..length {
+        for col in 0..length {
             if grid[row][col] == 'A' && check_shape(&grid, row, col, CORNERS) {
                 count += 1;
             }

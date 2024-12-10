@@ -40,11 +40,10 @@ pub fn run() {
         .collect::<Vec<_>>();
 
     let mut count = 0;
-    let height = grid.len();
-    let width = grid[0].len();
+    let length = grid.len();
 
-    for row in 0..height {
-        for col in 0..width {
+    for row in 0..length {
+        for col in 0..length {
             for &dir in &DIRECTIONS {
                 if check_word(&grid, row, col, dir) {
                     count += 1;
